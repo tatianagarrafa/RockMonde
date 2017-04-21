@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="fr">
+    
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Rock Monde - Les informations du mundo du Rock</title>
+		 <!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="css/reset_css.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css"/>
+
+		<!-- Icons
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="fonts-awesome/css/font-awesome.min.css">
+		
+		<!-- JS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text/javascript">
+			function slide1(){
+				document.getElementById('slide').src="images/baniere1.jpg";
+				setTimeout("slide2()", 2000)
+			}
+			 
+			 function slide2(){
+				document.getElementById('slide').src="images/baniere2.jpg";
+				setTimeout("slide3()", 2000)
+			}
+			 
+			function slide3(){
+				document.getElementById('slide').src="images/baniere3.jpg";
+				setTimeout("slide4()", 2000)
+			}
+			
+			function slide4(){
+				document.getElementById('slide').src="images/baniere4.jpg";
+				setTimeout("slide1()", 2000)
+			}
+	
+		</script>
+		
+	</head>
+	
+	
+	<body onLoad="slide1()">
+		<div class="container-fluid"> 
+			<div class="row">
+				<header>
+					<h1>Rock Monde</h1>
+					<nav id="menuPrincipal">
+						<ul>
+							<li><a href="index.html" id="pageCourante">Accueil</a></li>
+							<li><a href="html/propos.html">A_propos</a></li>
+							<li><a href="html/nouvelles.html">Nouvelles</a></li>
+							<li><a href="html/groupes.html">Groupes</a></li>
+							<li><a href="html/calendrier.html">Calendrier</a></li>
+							<li><a href="html/contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div><!-- fin div row_header-->
+			<div  class="row">
+				<section id="nouvelles">
+					<img id="slide"> <!-- slide -->
+					<h1>Nouvelles</h1>
+					<div>
+						<img src="images/streetLight.jpg" class="imgGauche col-md-3" alt="Nouvelle Streetlight Manifesto">
+						<h2><a href="#" class="couleurH2">Montreal: Streetlight Manifesto</a></h2>
+						<p class="margeGauche">Streetlight Manifesto sera de retour à Montréal le 24 septembre 2016 pour un concert au Métropolis. Streetlight Manifesto est un groupe de ska punk américain formé en 2003 à East Brunswick Township (New Jersey). Sept membres, sept styles différents mais une voix unique et distincte. Le groupe de ska punk était de passage en Octobre 2015 et avait épaté la foule.</p>
+					</div>
+
+					<div>
+						<img src="images/amnesia.jpg" class="imgGauche col-md-3" alt="Nouvelle Amnesia Rock Festival">
+						<h2><a href="#" class="couleurH2">Amnesia Rock Festival</a></h2>
+						<p class="margeGauche">L’Amnesia Rockfest de Montebello reviendra pour une 11e édition du 23 au 25 juin 2016, à Montebello. Les artistes qui feront partie de l’édition 2016 seront annoncés dans une semaine. Anciennement appelé Petite-Nation Rockfest puis D-Tox Rockfest, l’Amnesia Rockfest de Montebello en est à sa neuvième année d’existence et s’impose de plus en plus comme un festival incontournable pour les adeptes du genre.</p>
+					</div>
+
+					<div>
+						<img src="images/deftones.jpg" class="imgGauche col-md-3" alt="Nouvelle Deftones">
+						<h2><a href="#" class="couleurH2">Deftones et son nouvel album</a></h2>
+						<p class="margeGauche">Chino Moreno, le chanteur de Deftones, a annoncé la date de sortie du nouvel album de Deftones. Le album sortira le 8 avril 2016. C'est le 8ème album du groupe californiens. Le successeur de Koi No Yokan (2012) s’intitulera Gore. Initialement annoncé pour septembre dernier par Chino Moreno, ce tant attendu nouvel album paraîtra donc au printemps.</p>
+					</div>
+				</section><!-- fin section contenu-->
+
+			</div><!-- fin div row_sectionNouvelles-->
+			<div class="row">
+				<section id="savoirPlus"> 
+          			<article class="col-md-4 savoirPlus" id="article1">
+						<img src="images/lesGroupes_2.jpg" alt="lesGroupes" class = "img-responsive img-circle">
+						<h2><a href="html/groupes.html" title="Savoir plus" target="_self">Groupes</a></h2>
+						<p>Pour savoir toutes les informations des groupes de Rock.</p>
+					</article>
+
+					<article class="col-md-4 savoirPlus" id="article2">
+						<img src="images/quiSommesNous_2.jpg" alt="Qui Sommes Nous?" class = "img-responsive img-circle">
+						<h2><a href="html/propos.html" title="Savoir plus" target="_self">Qui sommes nous?</a></h2>
+						<p>Notre équipe et colaborateurs.</p>
+					</article>
+
+					<article class="col-md-4 savoirPlus" id="article3">
+						<img src="images/calendrier_2.jpg" alt="Calendrier" class = "img-responsive img-circle">
+						<h2><a href="html/calendrier.html" title="Savoir plus" target="_self">Calendrier</a></h2>
+						<p>Regardez ici les dates des concerts, festivals et partys.</p>
+					</article>
+				</section>
+			</div><!-- fin div row_sectionSavoirPlus-->
+
+			<div class="row">
+				<footer>
+					<nav id="reseauSociaux">
+						<h2>Suivez-nous:</h2>
+						<ul class="icons">
+                			<li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+               				<li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                			<li class="youtube"><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+                			<li class="email"><a href="#"><i class="fa fa-envelope-square"></i></a></li>    
+            			</ul>
+					</nav>
+					<div id="newsletter">
+						<h2>Newsletter:</h2>
+						<input type="email"> <br>
+						<input class="bouttons" type="submit" value="Envoyer">
+					</div>
+					<p id="copyright">Site web développé par Tati Garrafa.</p>
+				</footer>
+			</div><!-- fin div row_footer-->
+		</div> <!-- fin div row_container-fluid-->
+			
+			
+		
+		
+		 
+	</body>
+</html>

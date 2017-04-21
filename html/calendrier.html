@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Calandrier - Rock Monde</title>
+		 <!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href="../css/reset_css.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		
+		<!-- Icons
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="../fonts-awesome/css/font-awesome.min.css">
+	
+		<!-- JS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+		<script>
+		
+			$(document).ready(function() {
+			  function filterPath(string) 
+			  {
+				return string
+				  .replace(/^\//,'')  
+				  .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+				  .replace(/\/$/,'');
+			  }
+			  
+			  $('a[href*=#]').each(function() 
+			  {
+				if ( filterPath(location.pathname) == filterPath(this.pathname)
+				&& location.hostname == this.hostname
+				&& this.hash.replace(/#/,'') ) {
+				  var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+				  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+				   
+				   if ($target) 
+				   {
+					 var targetOffset = $target.offset().top;
+					 
+					 $(this).click(function() 
+					 {
+					  $('html, body, #calendrier_jour').animate({scrollTop: targetOffset}, 2000);
+					   return false;
+					 });
+				  }
+				}
+			  });
+			});
+			//Fin Du Script
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<header>
+					<h1>Rock Monde</h1>
+					<nav id="menuPrincipal">
+						<ul>
+							<li><a href="../index.html">Accueil</a></li>
+							<li><a href="propos.html">A_propos</a></li>
+							<li><a href="nouvelles.html">Nouvelles</a></li>
+							<li><a href="groupes.html">Groupes</a></li>
+							<li><a href="calendrier.html" id="pageCourante">Calendrier</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			<div id="contenu row">
+				<section id="calendrier"> 
+					<div id="calendrier_entete">
+						<div><a href="#" class="avant"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a></div>
+						<div id="mois">Avril</div>
+						<div><a href="#"><i class="fa fa-hand-o-right" aria-hidden="true"></i></a></div>
+					</div>
+					<div id="calendrier_jours">
+						<table>
+							<thead>
+								<tr>
+	   								<th>Dim</th>
+	    							<th>Lun</th>
+	    							<th>Mar</th>
+	    							<th>Mer</th>
+	    							<th>Jeu</th>
+	    							<th>Ven</th>
+	    							<th>Sam</th>
+ 								</tr>
+							</thead>
+							<tbody>
+								<tr>
+	   								<th></th>
+	    							<th></th>
+	    							<th></th>
+	    							<th></th>
+	    							<th></th>
+	    							<th>01</th>
+	    							<th>02</th>
+ 								</tr>
+ 								<tr>
+	   								<th>03</th>
+	    							<th>04</th>
+	    							<th>05</th>
+	    							<th>06</th>
+	    							<th>07</th>
+	    							<th>08</th>
+	    							<th>09
+	    								<a href="#day9"><img src="../images/logo2.png"></a>
+	    							</th>
+ 								</tr>
+ 								<tr>
+	   								<th>10</th>
+	    							<th>11</th>
+	    							<th>12</th>
+	    							<th>13</th>
+	    							<th>14
+	    								<a href="#day14"><img src="../images/logo2.png"></a>
+	    							</th>
+	    							<th>15
+	    								<a href="#day15"><img src="../images/logo2.png"></a>
+	    							</th>
+	    							<th>16</th>
+ 								</tr>
+ 								<tr>
+	   								<th>17</th>
+	    							<th>18</th>
+	    							<th>19</th>
+	    							<th>20</th>
+	    							<th>21</th>
+	    							<th>22</th>
+	    							<th>23
+	    								<a href="#day23"><img src="../images/logo2.png"></a>
+	    							</th>
+ 								</tr>
+ 								<tr>
+	   								<th>24</th>
+	    							<th>25</th>
+	    							<th>26</th>
+	    							<th>27</th>
+	    							<th>28</th>
+	    							<th>29</th>
+	    							<th>30</th>
+ 								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</section>	
+				
+				<section id="calendrier_jour"> 
+					<h1>Calendrier par jour</h1>
+					<h2>09 avril 2016</h2>
+					<a id="day9" class="smooth"></a>
+					<ul>
+						<li> <a href="#">Pennywise au Métropolis</a></li>
+						<li> <a href="#">The Slackers au Café Campus</a></li>
+					</ul>
+					<h2>14 avril 2016</h2>
+					<a id="day14" class="smooth"></a>
+					<ul>
+						<li> <a href="#">Pouzza FEST</a></li>
+						<li> <a href="#">Expo Rock</a></li>
+						<li> <a href="#">Punchline 13 au Café Campus</a></li>
+					</ul>
+					<h2>15 avril 2016</h2>
+					<a id="day15" class="smooth"></a>
+					<ul>
+						<li> <a href="#">Pouzza FEST</a></li>
+						<li> <a href="#">Expo Rock</a></li>
+					</ul>
+					<h2>23 avril 2016</h2>
+					<a id="day23" class="smooth"></a>
+					<ul>
+						<li> <a href="#">Face to Face au Foufounes Électriques</a></li>
+					</ul>
+				</section>
+			</div><!--Fin Contenu-->
+			<div class="row">
+				<footer>
+					<nav id="reseauSociaux">
+						<h2>Suivez-nous:</h2>
+						<ul class="icons">
+							<li class="facebook"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+							<li class="instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li class="youtube"><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+							<li class="email"><a href="#"><i class="fa fa-envelope-square"></i></a></li>    
+						</ul>
+					</nav>
+				<div id="newsletter">
+					<h2>Newsletter:</h2>
+					<input type="email"> <br>
+					<input class="bouttons" type="submit" value="Envoyer">
+				</div>
+				<p id="copyright">Site web développé par Tati Garrafa.</p>
+				</footer>
+			</div>
+		</div><!--Fin container-fluid-->
+
+	</body>
+</html>

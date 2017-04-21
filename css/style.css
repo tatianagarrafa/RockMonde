@@ -1,0 +1,931 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+@font-face {
+    font-family: 'rocks_deathregular';
+    src: url('fonts/rock_s_death-webfont.eot');
+    src: url('fonts/rock_s_death-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/rock_s_death-webfont.woff2') format('woff2'),
+         url('fonts/rock_s_death-webfont.woff') format('woff'),
+         url('fonts/rock_s_death-webfont.ttf') format('truetype'),
+         url('fonts/rock_s_death-webfont.svg#rocks_deathregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background-image: url('../images/bg_body.jpg');
+}
+
+.container-fluid{
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #000;
+	border-radius: 1em;
+	box-shadow: 0 0 1em #aaa;
+}
+
+/*-------------HEADER-------------*/
+header {
+	width: 100%;
+}
+
+header h1{
+	font-family: 'rocks_deathregular';
+	font-size: 12em;
+	color: #fff;
+	margin-left: 45px;
+	padding-top: 30px;
+}
+
+
+header #menuPrincipal{
+	font-family: 'rocks_deathregular';
+	font-size: 1.2em;
+	margin: 50px 0px 0px 80px;
+}
+
+header #menuPrincipal ul{
+	list-style: none;
+	margin-top: 30px;
+}
+
+header #menuPrincipal ul li {
+	display: inline;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+header #menuPrincipal ul li a{
+	text-decoration: none;
+	color: red;
+	font-size: 1.4em;
+	width: 250px;
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+header #menuPrincipal ul li a:hover{
+	color: #fff;
+}
+
+header #menuPrincipal ul li a:active, 
+header #menuPrincipal ul li a#pageCourante{
+	color: #fff;
+}
+
+/*-------------CONTENANT-------------*/
+#contenu{
+	margin: -10px 10px 10px 10px;
+}
+
+#slide{
+	margin-left: 53px;
+}
+
+/*-------------SECTION-------------*/
+section{
+	max-width: 100%;
+}
+
+.margeGauche{
+	width: 90%;
+}
+
+article h1,
+#nouvelles h1{
+	font-family: 'rocks_deathregular';
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	color: red;
+}
+
+.couleurH2{
+	font-family: 'rocks_deathregular';
+	letter-spacing: 3px;
+	color: #666060;
+	font-size: .6em;
+	text-decoration: none;
+}
+
+.couleurH2:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+article a,
+.savoirPlus a{
+	text-decoration: none;
+	color: red;
+	padding: 5px;
+}
+
+article a:hover,
+.savoirPlus a:hover{
+	color: #fff;
+	
+}
+
+article .imgGauche{
+	float: left;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+#savoirPlus p{
+	text-align: center;
+	
+}
+
+.savoirPlus{
+	display: inline-block;
+	width: 225px;
+	margin-top: 30px;
+	margin-left: 67px;
+	padding: 5px;
+	float: left;
+}
+
+.savoirPlus h2{
+	text-align: center;
+	font-family: 'rocks_deathregular';
+	font-size: 1.3em;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.savoirPlus img{
+	width: 300px;
+	padding: 5px;
+	margin-top: 40px;
+}
+
+.savoirPlus p{
+	margin-left: 8px;
+}
+
+/*-------------FOOTER------------*/
+footer{
+	clear: left;
+	max-width: 100%;
+	font-size: 0.8em;
+	padding: 20px;
+}
+
+#reseauSociaux ul.icons{
+    display:block;
+    list-style: none;
+}
+
+#reseauSociaux ul.icons li{
+	font-size: 4.5em;
+    display: inline;
+    padding: 0 1%;
+}
+
+#reseauSociaux ul.icons li a{
+    color: #fff;
+}
+
+#reseauSociaux ul.icons li a:hover{
+	color: red;
+}
+
+footer h2{
+	font-size: 1.5em;
+	font-family: 'rocks_deathregular';
+	color: red;
+	letter-spacing: 2px;
+}
+
+footer #reseauSociaux{
+	float: left;
+	margin: 0px 20px;
+	width : 500px;
+}
+
+footer  #newsletter input{
+	margin: 20px 0 0 0;
+	height: 35px;
+	width: 300px;
+}
+
+footer #newsletter .bouttons {
+	display: inline-block;
+	font-size: 1.1em;
+	letter-spacing: 3px;
+	font-family: 'rocks_deathregular';
+	color: #000;
+	height: 30px;
+	width: 100px;
+}
+
+input[type=submit],
+input[type=reset]{
+    background: #fff;
+
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover{
+    background: red;
+	border: 2px solid #fff;
+}
+
+footer #copyright{
+	font-variant: small-caps;
+	font-size: 0.9em;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 3px;
+	clear: left;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+/* calendrier
+-------------------------------------------------------------*/
+#calendrier{
+	height: 1000px;
+}
+
+#calendrier h1{
+	font-family: 'rocks_deathregular';
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	color: red;
+}
+
+#calendrier_entete{
+	 display: flex;
+ 	 flex-direction: row;
+ 	 justify-content: space-around;
+}
+
+#calendrier_entete a{
+	color: #666060;
+}
+
+#calendrier_entete a:hover{
+	color: #fff;
+}
+
+#calendrier_entete i{
+	font-size: 5em;
+}
+
+#mois{
+	font-size: 3em;
+	letter-spacing: 3px;
+	font-family: 'rocks_deathregular';
+	color: #666060;
+	margin-top: 20px;
+}
+
+table{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+table thead th{
+	text-align: center;
+}
+
+table th{
+	width: 100px;
+	border: 2px solid red;
+	padding: 3px;
+}
+
+table tbody th{
+		height: 100px; 
+}
+
+table th img{
+	width: 100px;
+}
+
+/* calendrier_jour
+-------------------------------------------------------------*/
+#calendrier_jour h1{
+	font-family: 'rocks_deathregular';
+	margin-top: 100px;
+	margin-left: 30px;
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	color: red;
+}
+#calendrier_jour h2{
+	font-family: 'rocks_deathregular';
+	margin-top: 50px;
+	margin-left: 30px;
+	font-size: 1.5em;
+	letter-spacing: 3px;
+	color: red;
+}
+
+#calendrier_jour ul{
+	list-style: none;
+	margin-left: 50px;
+}
+
+#calendrier_jour  ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Media Queries
+-------------------------------------------------------------*/
+/* For devices bigger than 800px and smaller than 1100px */
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+	header h1{
+		font-size: 12rem;
+		margin-left: 8%;
+		white-space: nowrap;
+	}
+	
+	header #menuPrincipal{
+		width: 90%;
+		margin-left: 15px;
+		white-space: nowrap;
+		font-size: 1.4rem;
+	}
+	
+	.margeGauche,
+	.couleurH2{
+		margin-left: 2%;
+	}
+	
+	.savoirPlus{
+		margin-left: 2%;
+	}
+	
+	#slide{
+		width: 80%;
+		height: 80%;
+		margin-left: 10%;
+	}
+	
+	footer #reseauSociaux{
+	float: left;
+	margin: 0px 5px;
+	width : 60%;
+}
+
+	footer  #newsletter input{
+		width: 30%;
+	}
+
+	footer #newsletter .bouttons {
+		font-size: .9em;
+		letter-spacing: 1px;
+		font-family: Verdana,Geneva,sans-serif;
+		color: #000;
+	}
+	
+	#calendrier_entete i{
+		font-size: 2.4em;
+	}
+
+	#mois{
+		font-size: 2em;
+
+		margin-top: 5px;
+	}
+	
+	table{
+		width: 100%;
+		height: 70%;
+	}
+	
+	table thead th{
+		font-size: .7em;
+	}
+
+	table tbody th{
+		width: 70px;
+		height: 70px; 
+	}
+
+	table th img{
+		width: 70%;
+		height: 70%;
+		margin-left: 15px;
+	}
+
+	#calendrier_jour h1{
+		margin-top: 100px;
+		margin-left: 0px;
+		font-size: 1.6em;
+	}
+	
+	#calendrier_jour h2{
+		margin-top: 20px;
+		margin-left: 0px;
+		font-size: 1.3em;
+	}
+
+	#calendrier_jour ul{
+		margin-left: 0px;
+	}
+	
+	#calendrier_jour ul li{
+		font-size: 1em;
+	}
+	
+}
+/* For devices bigger than 600px and smaller than 800px */
+@media screen and (min-width: 600px) and (max-width: 799px) {
+	header h1{
+		font-size: 10rem;
+		margin-left: 8%;
+		white-space: nowrap;
+	}
+	
+	.imgGauche{
+		width: 60%;
+		height: 60%;
+		margin-left: 130px;
+	}
+	
+	img{
+		width: 80%;
+		height: 80%;
+		margin-bottom: 10px;
+		margin-left: 70px;
+	}
+	
+	.margeGauche,
+	.couleurH2,
+	#savoirPlus p{
+		margin-left: 10px;
+		font-size: .9em;
+	}
+	
+	header #menuPrincipal{
+		width: 90%;
+		margin-left: 7px;
+		white-space: nowrap;
+	}
+	
+	header #menuPrincipal ul li a{
+		font-size: .9em;
+	}
+	
+	#nouvelles h1{
+		font-size: 2em;
+		margin-top: 20px;
+	}
+	
+    #nouvelles h2{
+		font-size: 1.5em; 
+	
+	}
+	
+	#savoirPlus{
+		margin-left: -25px;
+	}
+	
+	.savoirPlus{
+		width: 160px;
+	}
+	
+	#savoirPlus img{
+		width: 70%;
+		height: 70%;
+		margin-left: 20px;
+	}
+	
+	ul.icons li a{
+		font-size: 0.75em;
+	}
+	
+	footer #reseauSociaux{
+	float: left;
+	margin: 0px 5px;
+	width : 60%;
+}
+
+	footer  #newsletter input{
+		width: 30%;
+	}
+
+	footer #newsletter .bouttons {
+		font-size: .9em;
+		letter-spacing: 1px;
+		font-family: Verdana,Geneva,sans-serif;
+		color: #000;
+	}
+	
+	#calendrier_entete i{
+		font-size: 2em;
+	}
+
+	#mois{
+		font-size: 1.3em;
+		letter-spacing: 3px;
+		font-family: 'rocks_deathregular';
+		color: #666060;
+		margin-top: 5px;
+	}
+	
+	table{
+		width: 100%;
+		height: 70%;
+	}
+	
+	table thead th{
+		font-size: .7em;
+	}
+
+	table tbody th{
+		width: 70px;
+		height: 70px; 
+	}
+
+	table th img{
+		width: 70%;
+		height: 70%;
+		margin-left: 15px;
+	}
+
+	#calendrier_jour h1{
+		margin-top: 100px;
+		margin-left: 0px;
+		font-size: 1.6em;
+	}
+	
+	#calendrier_jour h2{
+		margin-top: 20px;
+		margin-left: 0px;
+		font-size: 1.3em;
+	}
+
+	#calendrier_jour ul{
+		margin-left: 0px;
+	}
+	
+	#calendrier_jour ul li{
+		font-size: 1em;
+	}
+	
+	
+}
+
+/* For devices bigger than 480px and smaller than 600px */
+@media screen and (min-width: 480px) and (max-width: 599px) {
+	header h1{
+		font-size: 7rem;
+		margin-left: 15%;
+		white-space: nowrap;
+	}
+	
+	.imgGauche{
+		width: 60%;
+		height: 60%;
+		margin-left: 20%;
+	}
+	
+	img{
+		width: 80%;
+		height: 80%;
+		margin-bottom: 10px;
+		margin-left: 20%;
+	}
+	
+	.margeGauche,
+	.couleurH2,
+	#savoirPlus p{
+		margin-left: 10px;
+		font-size: .9em;
+	}
+	
+	header #menuPrincipal{
+		width: 95%;
+		margin-left: 10%;
+	}
+	
+	header #menuPrincipal ul li{
+		margin-left: -2%;
+	}
+	
+	header #menuPrincipal ul li a{
+		font-size: .7em;
+	}
+	
+	#nouvelles h1{
+		font-size: 2em;
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+    #nouvelles h2{
+		font-size: 1.5em; 
+		text-align: center;
+	}
+	
+	#nouvelles p{
+		text-align: center;
+	}
+	
+	#savoirPlus{
+		margin-left: -2%;
+	}
+	
+	.savoirPlus{
+		width: 30%;
+		margin-left: 3%;
+	}
+	
+	#savoirPlus img{
+		width: 70%;
+		height: 70%;
+		margin-left: 20px;
+	}
+	
+	#savoirPlus h2{
+		font-size: .9em;
+	}
+	
+	#savoirPlus p{
+		font-size: .7em;
+	}
+	
+	ul.icons li a{
+		font-size: 0.75em;
+	}
+	
+	footer #reseauSociaux{
+		float: left;
+		margin: 0px 5px;
+		width : 60%;
+	}
+
+	footer  #newsletter input{
+		width: 35%;
+	}
+
+	footer #newsletter .bouttons {
+		font-size: .9em;
+		letter-spacing: 1px;
+		font-family: Verdana,Geneva,sans-serif;
+		color: #000;
+		width: 15%;
+	}
+	
+	#calendrier_entete i{
+		font-size: 2em;
+	}
+
+	#mois{
+		font-size: 1.3em;
+		letter-spacing: 3px;
+		font-family: 'rocks_deathregular';
+		color: #666060;
+		margin-top: 5px;
+	}
+	
+	table{
+		width: 100%;
+		height: 70%;
+	}
+	
+	table thead th{
+		font-size: .7em;
+	}
+
+	table tbody th{
+		width: 50px;
+		height: 50px; 
+	}
+
+	table th img{
+		width: 70%;
+		height: 70%;
+	}
+
+	#calendrier_jour h1{
+		margin-top: 100px;
+		margin-left: 0px;
+		font-size: 1.3em;
+	}
+	
+	#calendrier_jour h2{
+		margin-top: 20px;
+		margin-left: 0px;
+		font-size: 1em;
+	}
+
+	#calendrier_jour ul{
+		margin-left: 0px;
+	}
+	
+	#calendrier_jour ul li{
+		font-size: .9em;
+	}
+}
+
+/* For devices bigger than 200px and smaller than 480px */
+@media screen and (min-width: 200px) and (max-width: 479px) {
+	header h1{
+		font-size: 4.5rem;
+		margin-left: 7px;
+		text-align: center;
+		white-space: nowrap;
+	}
+	
+	header #menuPrincipal{
+		width: 40%;
+		margin-top: 0px;
+		margin-left: 32%;
+		text-align: center;
+	}
+	
+	header #menuPrincipal ul{
+		margin-top: 10px;
+	}
+	
+	header #menuPrincipal ul li a{
+		font-size: 1em;
+	}
+
+	img{
+		width: 50%;
+		height: 50%;
+		margin-bottom: 10px;
+		margin-left: 28%;
+	}
+
+	#savoirPlus{
+		margin-left: 5%;
+	}
+	
+	#savoirPlus img{
+		width: 60%;
+		height: 60%;
+		margin-left: 25%;
+		margin-top: 20px;
+	}
+	
+	#nouvelles h1 {
+		font-size: 1.7em;
+		margin-left: 5%;
+	}
+	
+	.savoirPlus{
+		margin-left: 10%;
+		margin-top: 0px;
+	}
+	
+	.savoirPlus h2,
+	.savoirPlus p{
+		margin-left: 10%;
+	}
+	
+	#slide{
+		display: none;
+	}
+	
+	h1{
+		font-size: 3em;
+		text-align: center;
+	}
+	
+    h2{
+		font-size: 2.5em; 
+		margin-top: -5px;
+		text-align: center;
+	}
+	
+	p{
+		text-align: center;
+	}
+	
+    ul.icons li a{
+		font-size: 0.75em;
+	}
+	
+		footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 1em;
+	}
+	
+	footer #reseauSociaux{
+		width: 90%;
+	}
+
+	footer #reseauSociaux h2{
+		margin-left: -6%;
+	}
+	
+	footer #reseauSociaux ul{
+		margin-top: -20px;
+		margin-left: 25%;
+		margin-bottom: 20px;
+	}
+	
+	footer #reseauSociaux ul.icons li{
+		font-size: 3.5em;
+	}
+
+	footer  #newsletter input{
+		width: 70%;
+		margin-left: 15%;
+		margin-top: -1%;
+	}
+
+	footer #newsletter .bouttons {
+		font-size: .9em;
+		letter-spacing: 1px;
+		font-family: Verdana,Geneva,sans-serif;
+		color: #000;
+		width: 30%;
+		margin-left: 33%;
+		margin-top: 3%;
+	}
+	
+	footer #copyright{
+		font-size: .6em;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.margeGauche,
+	.couleurH2,
+	#savoirPlus p{
+		margin-left: 10px;
+		font-size: .9em;
+	}
+
+	.couleurH2{
+		margin-left: 10px;
+		font-size: .4em;
+	}
+	
+	#calendrier_entete i{
+		font-size: 2em;
+	}
+
+	#mois{
+		font-size: 1.3em;
+		letter-spacing: 3px;
+		font-family: 'rocks_deathregular';
+		color: #666060;
+		margin-top: 5px;
+	}
+	
+	table{
+		width: 100%;
+		height: 70%;
+	}
+	
+	table thead th{
+		font-size: .7em;
+	}
+
+	table tbody th{
+		width: 50px;
+		height: 50px; 
+	}
+
+	table th img{
+		width: 70%;
+		height: 70%;
+	}
+
+	#calendrier_jour h1{
+		margin-top: 100px;
+		margin-left: 0px;
+		font-size: 1.3em;
+	}
+	
+	#calendrier_jour h2{
+		margin-top: 20px;
+		margin-left: 0px;
+		font-size: 1em;
+	}
+
+	#calendrier_jour ul{
+		margin-left: 0px;
+	}
+	
+	#calendrier_jour ul li{
+		text-align: center;
+		font-size: .9em;
+	}
+
+}
